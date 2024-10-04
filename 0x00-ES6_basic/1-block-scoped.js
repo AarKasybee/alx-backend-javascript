@@ -3,8 +3,8 @@ export default function taskBlock(trueOrFalse) {
   const task2 = true;
 
   if (trueOrFalse) {
-    const task = true;  // This `task` is block-scoped and won't overwrite the outer `task`.
-    const task2 = false; // This `task2` is block-scoped and won't overwrite the outer `task2`.
+    const task = true;  // Block-scoped variable, doesn't overwrite outer 'task'
+    const task2 = false; // Block-scoped variable, doesn't overwrite outer 'task2'
   }
 
   return [task, task2];
